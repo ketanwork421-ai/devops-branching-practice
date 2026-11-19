@@ -1,0 +1,25 @@
+
+name: Basic CI Workflow
+
+# Run whenever code is pushed or a PR is created
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display success message
+        run: echo "GitHub Actions is working successfully!"
+
+      - name: Check repository files
+        run: ls -la
