@@ -1,5 +1,5 @@
 # devops-branching-practice
-Git branching and collaboration practice - VERSION A
+Git branching and collaboration practice - VERSION A + VERSION B (Merged)
 ## Git Branching Workflow
 
 ### Branches
